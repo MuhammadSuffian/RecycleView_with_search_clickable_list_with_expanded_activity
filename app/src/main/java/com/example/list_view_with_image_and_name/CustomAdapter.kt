@@ -11,7 +11,7 @@ import android.widget.Toast
 class CustomAdapter(private var mlist:List<ItemsViewModel>):
 RecyclerView.Adapter<CustomAdapter.ViewHolder>(){
 
-    var onitemclick:((ItemsViewModel)->Unit)?=null
+        var onitemclick:((ItemsViewModel)->Unit)?=null
 
     override fun onCreateViewHolder(parent:ViewGroup,viewType:Int):ViewHolder{
         val view=LayoutInflater.from(parent.context).inflate(R.layout.card_item_list,parent,false)
